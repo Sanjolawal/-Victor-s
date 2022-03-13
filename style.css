@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+h4 {
+  font-size: clamp(20px, 2vw, 2.2vw);
+  text-align: center;
+  /* width:90vw; */
+  margin: 0 3vw 0 3vw;
+}
+.fimgcon {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 4vw;
+  justify-self: center;
+  /* background: red; */
+  margin:5vh 0 0 0;
+}
+.one,
+.two,
+.three {
+  width: 100%;
+  object-fit: 100%;
+}
+.two {
+  height: 80vh;
+}
+
+@media all and (max-width: 760px) {
+  .fimgcon {
+    display: block;
+    width:98%;
+    margin:0;
+    /* padding: 0 10vw 0 10vw; */
+  }
+  .one,
+  .two,
+  .three {
+    width: 80%;
+    object-fit: 100%;
+    padding: 5vh 8vw 4vh 10vw;
+
+  }
+}
