@@ -2,10 +2,16 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
+  width:80%;
+  margin:0 10vw 0 10vw;
 }
-h1 {
+h1,h6 {
   color: red;
   text-align: center;
+}
+h6{
+  font-size:clamp(22px, 2vw,2.2vw);
+  margin: 4vh 0 3vh 0;
 }
 h4 {
   font-size: clamp(20px, 2vw, 2.2vw);
@@ -31,8 +37,61 @@ h4 {
 .two {
   height: 80vh;
 }
+.box{
+  text-align:center;
+  border: 2px solid black;
+  margin:4vh 3vw 3vh 3vw;
+  padding:3vh 3vw 3vh 3vw;
+
+}
+p{
+  text-align:center;
+  margin: 0 3vw 0 3vw;
+}
+.middle{
+    width:60%;
+    margin: 5vh 20% 0 20%;
+    /* background:red; */
+}
+.four,.five,.six,.seven{
+  width:94%;
+  margin: 5vh 3vw 3vh 3vw;
+  object-fit:cover;
+}
+.name{
+  font-size:20px;
+  font-weight:bold;
+}
+a{
+  margin: 2vh 18% 3vh 18%;
+  text-decoration:none;
+  border:2px solid white;
+  padding:1vh;
+  width:60%;
+  text-align:center;
+  border-radius: 10px;
+  background:green;
+  color:white;
+}
+a:hover{
+  background: rgb(0,168,0);
+  border: 2px solid yellow;
+}
+.saying{
+  font-size:clamp(20px,2vw,2.1vw);
+}
+.sec2{
+  width:99%;
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap:4%;
+}
 
 @media all and (max-width: 760px) {
+  body {
+  width:100%;
+  margin:0;
+}
   .fimgcon {
     display: block;
     width:98%;
@@ -46,5 +105,12 @@ h4 {
     object-fit: 100%;
     padding: 5vh 8vw 4vh 10vw;
 
+  }
+  .sec2{
+    display:block;
+  }
+  .middle{
+    margin:5vh 0 0 0;
+    width:98%;
   }
 }
